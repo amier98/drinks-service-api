@@ -6,6 +6,6 @@ export const getCoffee = async (
   res: Response
 ) => {
   const { coffeeName } = req.query;
-  const coffee = coffeeService.getCoffee(coffeeName as string);
+  const coffee = coffeeService.getCoffee(coffeeName);
   res.json(coffee).status(200);
 };
